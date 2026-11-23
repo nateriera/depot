@@ -48,8 +48,9 @@ pending. Regenerate the demo to reset it.
    recovery or re-run choices.
 5. **Review.** A human reviews the result and controls merging. Mechanical
    verification is not human acceptance. Completion is a `reviewed` event with a
-   passing result, recorded through the review integration; the floor currently
-   has no general “mark Done” button or review-completion CLI.
+   passing result, recorded through the floor's Review panel or the `review`
+   CLI; the panel also offers recovery and re-run actions for failed or
+   rejected reviews.
 
 Messages annotate records. Park holds an item. Pause holds new dispatches in a
 track; Table shelves it; End refuses active pipeline work and parks remaining

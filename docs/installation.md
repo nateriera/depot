@@ -59,7 +59,8 @@ python3 turntable/depot.py poll --once
 
 Or run `poll` without `--once` to continue polling. Only one daemon may own a yard.
 A successful build reaches Review; a failed check shows its evidence. Human
-review/completion is a separate records integration, described in
+review/completion is a `reviewed` event recorded through the floor's Review
+panel (or the `review` CLI), described in
 [FORMATS](../turntable/FORMATS.md). Never interpret Review as merged or Done.
 
 ## Optional Linux/systemd user installation
