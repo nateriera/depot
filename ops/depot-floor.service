@@ -1,0 +1,13 @@
+[Unit]
+Description=Depot floor on loopback only
+
+[Service]
+Type=simple
+WorkingDirectory=@YARD@
+EnvironmentFile=@CONFIG@
+ExecStart=@PYTHON@ @SCRIPT@ floor
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

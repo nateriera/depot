@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Depot Floor
+Comment=Open the configured local Depot floor
+Exec=@PYTHON@ @LAUNCHER@ --config @CONFIG@
+Icon=applications-development
+Terminal=false
+Categories=Development;

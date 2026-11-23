@@ -1,0 +1,14 @@
+[Unit]
+Description=Depot turntable poll daemon
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=@YARD@
+EnvironmentFile=@CONFIG@
+ExecStart=@PYTHON@ @SCRIPT@ poll
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

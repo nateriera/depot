@@ -1,0 +1,46 @@
+{
+  "ts": "2040-06-15T12:00:00.000Z",
+  "result": "discrepancies",
+  "expected_files": [
+    "turntable/depot.py",
+    "turntable/test_depot.py",
+    "turntable/FORMATS.md"
+  ],
+  "changed_files": [
+    "demo-changes.patch",
+    "demo-suite.log",
+    "repo/"
+  ],
+  "discrepancies": [
+    {
+      "path": "demo-changes.patch",
+      "kind": "extra"
+    },
+    {
+      "path": "demo-suite.log",
+      "kind": "extra"
+    },
+    {
+      "path": "repo/",
+      "kind": "extra"
+    },
+    {
+      "path": "turntable/FORMATS.md",
+      "kind": "missing"
+    },
+    {
+      "path": "turntable/depot.py",
+      "kind": "missing"
+    },
+    {
+      "path": "turntable/test_depot.py",
+      "kind": "missing"
+    }
+  ],
+  "test": {
+    "command": "python3 -m unittest discover -s turntable",
+    "exit_code": 1,
+    "tail": "ImportError: Start directory is not importable: 'turntable'\n"
+  },
+  "commit": null
+}

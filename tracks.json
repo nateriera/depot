@@ -1,0 +1,3 @@
+{
+  "_default": {"timeout_s": 900, "quiet_after_s": 300}
+}

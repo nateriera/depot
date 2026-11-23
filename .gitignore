@@ -1,0 +1,9 @@
+items/*/work/
+__pycache__/
+log/poll.lock
+log/poll.log
+log/intents/
+.verification/
+public-tree/
+yard/
+.demo/
